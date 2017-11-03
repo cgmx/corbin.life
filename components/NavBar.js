@@ -7,8 +7,20 @@ import Router from 'next/router'
 var styles = {
     appBar: {
         flexWrap: 'wrap'
+    },
+    gridButton: {
+        float: 'right',
+        padding: '8px 25px',
+        margin: '0 5px'
     }
 }
+
+                            // <Button color="inherit" href="/archive" style={styles.gridButton}>
+                            //     Archive
+                            // </Button>
+                            // <Button color="inherit" href="/" style={styles.gridButton}>
+                            //     Stream
+                            // </Button>
 
 const NavBar = (props) => (
         <div className="root-AppBar">
@@ -21,15 +33,10 @@ const NavBar = (props) => (
                             </Button>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Button color="inherit" href="/">
-                                Stream
-                            </Button>
-                            <Button color="inherit" href="/archive">
-                                Archive
-                            </Button>
-                            <Button color="inherit" href="/contact">
+                            <Button color="inherit" href="/contact" style={styles.gridButton}>
                                 Contact
                             </Button>
+
                         </Grid>
                     </Grid>
                 </Toolbar>

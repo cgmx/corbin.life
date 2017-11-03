@@ -1,0 +1,11 @@
+.PostGrid-PushDown {
+    margin-top: 100px !important
+}
+.PostImageCard {
+    max-width: 940px;
+    margin: 15px 0
+}
+
+.PostImageCard_ImageHeight {
+    height: 350px;
+}
