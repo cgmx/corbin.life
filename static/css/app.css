@@ -9,3 +9,11 @@
 .PostImageCard_ImageHeight {
     height: 350px;
 }
+
+#permalink-container:hover #permalink-anchor {
+    opacity: 1 !important
+}
+
+#permalink-anchor svg:hover {
+    fill: #9E9E9E !important
+}

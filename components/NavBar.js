@@ -6,7 +6,8 @@ import Router from 'next/router'
 
 var styles = {
     appBar: {
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        width: '100%'
     },
     gridButton: {
         float: 'right',
@@ -23,30 +24,23 @@ var styles = {
                             // </Button>
 
 const NavBar = (props) => (
-        <div className="root-AppBar">
-            <AppBar position="fixed" color="default" style={styles.appBar}>
-                <Toolbar>
-                    <Grid container spacing={24}>
-                        <Grid item xs={12} sm={6}>
-                            <Button color="inherit" href="/">
-                                corbin.life
-                            </Button>
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <Button color="inherit" href="/contact" style={styles.gridButton}>
-                                Contact
-                            </Button>
+    <AppBar position="fixed" color="default" style={styles.appBar}>
+        <Toolbar>
+            <Grid container spacing={24}>
+                <Grid item xs={12} sm>
+                    <Button color="inherit" href="/">
+                        corbin.life
+                    </Button>
+                </Grid>
+                <Grid item xs={12} sm>
+                    <Button color="inherit" href="/contact" style={styles.gridButton}>
+                        Contact
+                    </Button>
 
-                        </Grid>
-                    </Grid>
-                </Toolbar>
-            </AppBar>
-            <style jsx>{`
-                .root-AppBar {
-                    width: 100%;
-                }
-            `}</style>
-        </div>
-    )
+                </Grid>
+            </Grid>
+        </Toolbar>
+    </AppBar>
+)
 
 export default NavBar;
